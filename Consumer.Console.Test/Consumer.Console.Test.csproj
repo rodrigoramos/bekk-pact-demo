@@ -15,8 +15,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\bekk-pact-dotnet\src\Bekk.Pact.Consumer.Extensions\Bekk.Pact.Consumer.Extensions.csproj" />
-      <ProjectReference Include="..\..\bekk-pact-dotnet\src\Bekk.Pact.Consumer\Bekk.Pact.Consumer.csproj" />
+      <ProjectReference Include="..\bekk-pact-dotnet\src\Bekk.Pact.Consumer.Extensions\Bekk.Pact.Consumer.Extensions.csproj" />
+      <ProjectReference Include="..\bekk-pact-dotnet\src\Bekk.Pact.Consumer\Bekk.Pact.Consumer.csproj" />
       <ProjectReference Include="..\Consumer.Console\Consumer.Console.csproj" />
     </ItemGroup>
 

@@ -6,17 +6,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer.Console", "Consume
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer.Console.Test", "Consumer.Console.Test\Consumer.Console.Test.csproj", "{A20E981C-AF8B-4928-BE15-F57694961AFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Provider.Web", "..\bekk-pact-dotnet\src\Bekk.Pact.Provider.Web\Bekk.Pact.Provider.Web.csproj", "{87594E3E-0634-4B33-AE3F-4479659F985B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Consumer", "..\bekk-pact-dotnet\src\Bekk.Pact.Consumer\Bekk.Pact.Consumer.csproj", "{68F69D68-5005-489A-9F87-2EEBDDBDD7D0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Consumer.Extensions", "..\bekk-pact-dotnet\src\Bekk.Pact.Consumer.Extensions\Bekk.Pact.Consumer.Extensions.csproj", "{2440640C-00B1-4DD0-9756-9200CF36AB95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bekk.Pact", "Bekk.Pact", "{FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Provider.WebApi.Test", "Provider.WebApi.Test\Provider.WebApi.Test.csproj", "{E8A03C04-5791-4CB6-8D77-BB9733701D41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Provider", "..\bekk-pact-dotnet\src\Bekk.Pact.Provider\Bekk.Pact.Provider.csproj", "{A17EE73C-CE0A-4AEC-9673-51350B709ABC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Common", "bekk-pact-dotnet\src\Bekk.Pact.Common\Bekk.Pact.Common.csproj", "{D8B94891-8129-4A62-B840-E4452E71F17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Consumer", "bekk-pact-dotnet\src\Bekk.Pact.Consumer\Bekk.Pact.Consumer.csproj", "{3171DE2D-38F7-4DD0-823F-2524A81F3F9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Consumer.Extensions", "bekk-pact-dotnet\src\Bekk.Pact.Consumer.Extensions\Bekk.Pact.Consumer.Extensions.csproj", "{5C3420D5-E1D5-4E8B-AB9E-47B4A183D73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Provider", "bekk-pact-dotnet\src\Bekk.Pact.Provider\Bekk.Pact.Provider.csproj", "{259F8570-76C8-496D-A178-98527FC75A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bekk.Pact.Provider.Web", "bekk-pact-dotnet\src\Bekk.Pact.Provider.Web\Bekk.Pact.Provider.Web.csproj", "{2CE946C0-B4E3-4FF3-93BF-62211918D16B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,31 +38,36 @@ Global
 		{A20E981C-AF8B-4928-BE15-F57694961AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A20E981C-AF8B-4928-BE15-F57694961AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A20E981C-AF8B-4928-BE15-F57694961AFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87594E3E-0634-4B33-AE3F-4479659F985B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87594E3E-0634-4B33-AE3F-4479659F985B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87594E3E-0634-4B33-AE3F-4479659F985B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87594E3E-0634-4B33-AE3F-4479659F985B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68F69D68-5005-489A-9F87-2EEBDDBDD7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68F69D68-5005-489A-9F87-2EEBDDBDD7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68F69D68-5005-489A-9F87-2EEBDDBDD7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68F69D68-5005-489A-9F87-2EEBDDBDD7D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2440640C-00B1-4DD0-9756-9200CF36AB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2440640C-00B1-4DD0-9756-9200CF36AB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2440640C-00B1-4DD0-9756-9200CF36AB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2440640C-00B1-4DD0-9756-9200CF36AB95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E8A03C04-5791-4CB6-8D77-BB9733701D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8A03C04-5791-4CB6-8D77-BB9733701D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8A03C04-5791-4CB6-8D77-BB9733701D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8A03C04-5791-4CB6-8D77-BB9733701D41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A17EE73C-CE0A-4AEC-9673-51350B709ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A17EE73C-CE0A-4AEC-9673-51350B709ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A17EE73C-CE0A-4AEC-9673-51350B709ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A17EE73C-CE0A-4AEC-9673-51350B709ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B94891-8129-4A62-B840-E4452E71F17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B94891-8129-4A62-B840-E4452E71F17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B94891-8129-4A62-B840-E4452E71F17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B94891-8129-4A62-B840-E4452E71F17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3171DE2D-38F7-4DD0-823F-2524A81F3F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3171DE2D-38F7-4DD0-823F-2524A81F3F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3171DE2D-38F7-4DD0-823F-2524A81F3F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3171DE2D-38F7-4DD0-823F-2524A81F3F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3420D5-E1D5-4E8B-AB9E-47B4A183D73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3420D5-E1D5-4E8B-AB9E-47B4A183D73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3420D5-E1D5-4E8B-AB9E-47B4A183D73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3420D5-E1D5-4E8B-AB9E-47B4A183D73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{259F8570-76C8-496D-A178-98527FC75A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259F8570-76C8-496D-A178-98527FC75A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259F8570-76C8-496D-A178-98527FC75A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259F8570-76C8-496D-A178-98527FC75A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE946C0-B4E3-4FF3-93BF-62211918D16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE946C0-B4E3-4FF3-93BF-62211918D16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE946C0-B4E3-4FF3-93BF-62211918D16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE946C0-B4E3-4FF3-93BF-62211918D16B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{87594E3E-0634-4B33-AE3F-4479659F985B} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
-		{68F69D68-5005-489A-9F87-2EEBDDBDD7D0} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
-		{2440640C-00B1-4DD0-9756-9200CF36AB95} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
-		{A17EE73C-CE0A-4AEC-9673-51350B709ABC} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
+		{D8B94891-8129-4A62-B840-E4452E71F17F} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
+		{3171DE2D-38F7-4DD0-823F-2524A81F3F9F} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
+		{5C3420D5-E1D5-4E8B-AB9E-47B4A183D73D} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
+		{259F8570-76C8-496D-A178-98527FC75A03} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
+		{2CE946C0-B4E3-4FF3-93BF-62211918D16B} = {FF123C9B-7192-42AB-A9B1-ADB0EAFCB863}
 	EndGlobalSection
 EndGlobal

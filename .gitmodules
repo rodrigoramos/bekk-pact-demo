@@ -1,0 +1,3 @@
+[submodule "bekk-pact-dotnet"]
+	path = bekk-pact-dotnet
+	url = git@github.com:rodrigoramos/bekk-pact-dotnet.git

@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\bekk-pact-dotnet\src\Bekk.Pact.Provider.Web\Bekk.Pact.Provider.Web.csproj" />
+      <ProjectReference Include="..\bekk-pact-dotnet\src\Bekk.Pact.Provider.Web\Bekk.Pact.Provider.Web.csproj" />
       <ProjectReference Include="..\Provider.WebApi\Provider.WebApi.csproj" />
     </ItemGroup>
 
